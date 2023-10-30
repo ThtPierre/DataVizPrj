@@ -6,5 +6,5 @@ altair
 plotly
 bokeh
 streamlit
-geopandas
+geopandas 
 shapely
