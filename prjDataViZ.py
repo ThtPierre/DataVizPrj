@@ -28,7 +28,7 @@ def hist_distrib(df):
 def boxplot_distribution(df):
     sns.set(style="whitegrid")  
     plt.figure(figsize=(12, 6))  
-    sns.boxplot(x="prix_nom", y="prix_valeur", data=df)
+    sns.boxplot(x="prix_nom", y="prix_valeur", data=df, palette='Set3')
     plt.title("Repartition des prix par type d'essence")
     plt.xticks(rotation=45)
     plt.show()
