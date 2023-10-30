@@ -224,8 +224,12 @@ df_gplc = df[df['prix_nom'] == 'GPLc']
 
 categories = ['SP98', 'E10', 'E85', 'GPLc', 'Gazole', 'SP95']
 
-st.write(df.head(80))
-st.write("Ici notre Dataframe, nettoyé et prêt à être utilisé.")
+
+showdf = st.checkbox('Afficher l\'ensemble du DataFrame')
+if showdf:
+    st.write(df.head(80))
+    st.write("Ici notre Dataframe, nettoyé et prêt à être utilisé.")
+
 
 
 st.markdown('<a name="histogram-section"></a>',  unsafe_allow_html=True)
