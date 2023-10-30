@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import altair as alt
 import plotly.express as px
 import bokeh as bk
@@ -156,7 +154,7 @@ def services(df):
         height=300,
         title='Prix moyen en fonction du nombre de services proposés'
     )
-    chart
+    st.altair_chart(chart)
 
 def autoroute(df, type_essence): 
     df_filtered = df[df['prix_nom'] == type_essence]
