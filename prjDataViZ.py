@@ -1,7 +1,15 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 import altair as alt
+import plotly.express as px
+import bokeh as bk
+import streamlit as st
 import geopandas as gpd
+from bokeh.models import ColumnDataSource
+from bokeh.plotting import figure
+from bokeh.transform import dodge
 from shapely.geometry import Point
 
 def hist_distrib(df):
@@ -148,7 +156,7 @@ def services(df):
         height=300,
         title='Prix moyen en fonction du nombre de services proposés'
     )
-    st.altair_chart(chart)
+    chart
 
 def autoroute(df, type_essence): 
     df_filtered = df[df['prix_nom'] == type_essence]
